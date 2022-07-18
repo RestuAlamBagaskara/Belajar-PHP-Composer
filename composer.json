@@ -1,0 +1,31 @@
+{
+    "name": "bagaskara/belajar-composer",
+    "description": "Belajar PHP Composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Bagaskara\\BelajarComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RestuAlamBagaskara",
+            "email": "alambagaskara18@gmail.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type" : "vcs",
+            "url" : "https://github.com/RestuAlamBagaskara/php-composer-hello" 
+        }
+    ],
+    "require": {
+        "monolog/monolog" : "2.2.0",
+        "alambagaskara/hello-lib" : "2.0.0"
+    },
+
+    "scripts": {
+        "run-server" : "php -S localhost:8080",
+        "hello" : "echo 'Hello gan'"
+    }
+}
